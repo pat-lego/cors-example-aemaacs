@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workspaceFilter version="1.0">
+    <filter root="/apps/cors/clientlibs"/>
+    <filter root="/apps/cors/components"/>
+    <filter root="/apps/cors/i18n"/>
+</workspaceFilter>

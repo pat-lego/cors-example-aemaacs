@@ -1,0 +1,24 @@
+// Configuration created by Apache Sling JCR Installer
+{
+  "supportedmethods":[
+    "GET",
+    "OPTIONS",
+    "HEAD",
+    "POST"
+  ],
+  "alloworigin":[
+    "http://localhost:5500"
+  ],
+  "allowedpaths":[
+    "/content/cors/us/en\\.model\\.json"
+  ],
+  "supportedheaders":[
+    "Authorization",
+    "Origin",
+    "Accept",
+    "X-Requested-With",
+    "Content-Type",
+    "Access-Control-Request-Method",
+    "Access-Control-Request-Headers"
+  ]
+}

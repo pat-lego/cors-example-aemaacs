@@ -1,0 +1,35 @@
+<html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="application/javascript">
+        $(document).ready(function () {
+            $.ajax({
+                url: 'http://localhost:4502/content/cors/us/en.model.json',
+                type: 'GET',
+                headers: {
+                    "Authorization": "Basic " + btoa('admin' + ":" + 'admin')
+                },
+                success: function (res) {
+                    console.log(res);
+                    $("#json").append(JSON.stringify(res));
+                },
+                error: function (error) {
+                    alert("I failed to load!")
+                    console.log(error)
+                }
+            });
+        });
+    </script>
+    <title>CORS Test</title>
+</head>
+
+<body>
+    <h1>Testing CORS for
+        http://localhost:4502/content/cors/us/en.model.json
+    </h1>
+    <div class="space">
+        <p id="json"></p>
+    </div>
+</body>
+
+</html>
