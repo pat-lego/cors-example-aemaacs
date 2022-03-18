@@ -124,3 +124,12 @@ A ClientLib will consist of the following files and directories:
 The project comes with the auto-public repository configured. To setup the repository in your Maven settings, refer to:
 
     http://helpx.adobe.com/experience-manager/kb/SetUpTheAdobeMavenRepository.html
+
+## How to validate config
+
+1. Deploy to the project in AEMaaCS
+2. Validate the OSGi config is enabled
+3. Validate that you can load http://localhost:4502/content/cors/us/en.model.json in your browser
+4. Install the LiveServer plugin in [VSCode](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)
+5. Open the CORSTest.html page in LiveServer (right click on CORSTest.html and select Open with Live Server)
+6. The mode.json data should appear in the page
